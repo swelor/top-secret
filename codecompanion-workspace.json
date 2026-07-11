@@ -1,0 +1,16 @@
+{
+    "name": "unnamed-project",
+    "version": "1.0.0",
+    "workspace_spec": "1.0",
+    "description": "Vite architecture teaching map",
+    "groups": [
+        {
+            "name": "Source Files",
+            "files": [
+                { "path": "package.json" },
+                { "path": "vite.config.js" },
+                { "path": "src/" }
+            ]
+        }
+    ]
+}

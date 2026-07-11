@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    font-family: 'Press Start 2P', cursive;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.envelope-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 5rem;
+    max-width: 1200px;
+}
+
+.spine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 300px;
+    background-color: #e8d5a3;
+    border: 4px solid #2d2d2d;
+    box-shadow: 8px 8px 0px #2d2d2d;
+}
+
+.envelope:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px #2d2d2d;
+}
+
+.envelope p {
+    font-size: 0.7rem;
+    color: #2d2d2d;
+    line-height: 1.8;
+}
+
+.letter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.letter-content {
+    background: #e8d5a3;
+    border: 4px solid #2d2d2d;
+    box-shadow: 8px 8px 0px #2d2d2d;
+    padding: 3rem;
+    max-width: 600px;
+    width: 90%;
+    animation: expandIn 0.4s ease;
+    font-size: 0.7rem;
+    color: #2d2d2d;
+    line-height: 1.8;
+}
+
+.letterbox-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+    background: #ff6b9d;
+    border: 4px solid #2d2d2d;
+    box-shadow: 4px 4px 0px #2d2d2d;
+    cursor: pointer;
+    grid-column: 1 / -1;
+}
+
+.letter-textarea {
+    width: 100%;
+    height: 200px;
+    font-family: 'Press Start 2P';
+    padding: 1rem;
+    border: 4px solid #2d2d2d;
+    margin: 1rem 0;
+    resize: none;
+    line-height: 1.8;
+}
+
+.send-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+    padding: 0.8rem 1.5rem;
+    background: #ff6b9d;
+    border: 4px solid #2d2d2d;
+    box-shadow: 4px 4px 0px #2d2d2d;
+    cursor: pointer;
+}
+
+
+@keyframes expandIn {
+    from { transform: scale(0.3); opacity: 0;}
+    to { transform: scale(1); opacity: 1;}
+}
+
+@media (max-width: 768px) {
+    .envelope-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem 1rem 1rem 1rem;
+        gap: 1rem;
+    }
+
+    .envelope {
+        width: 100%;
+        height: 120px;
+        padding: 1rem 0.5rem;
+    }
+
+    .envelope p {
+        font-size: 0.4rem;
+    }
+
+    .letter-content {
+        padding: 1.5rem;
+        font-size: 0.5rem;
+    }
+
+    .letter-textarea {
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .envelope-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .envelope p {
+        font-size: 0.35rem;
+    }
+}
