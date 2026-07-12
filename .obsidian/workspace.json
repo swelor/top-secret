@@ -180,9 +180,24 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "7b16c3a01bae7acc",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "notes.txt",
+    "vllm_env/bin/activate.csh",
+    "vllm_env/bin/activate.fish",
+    "vllm_env/bin/activate",
+    "vllm_env/bin/Activate.ps1",
+    "vllm_env/bin/pip3.14",
+    "vllm_env/bin/pip3",
+    "vllm_env/bin/pip",
+    "vllm_env/lib/python3.14/site-packages/pip/_vendor/urllib3/__pycache__/response.cpython-314.pyc",
+    "vllm_env/lib/python3.14/site-packages/pip/_vendor/urllib3/__pycache__/poolmanager.cpython-314.pyc",
+    "vllm_env/lib/python3.14/site-packages/pip/_vendor/urllib3/__pycache__/filepost.cpython-314.pyc",
+    "vllm_env/lib/python3.14/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+    "vllm_env/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md"
+  ]
 }
